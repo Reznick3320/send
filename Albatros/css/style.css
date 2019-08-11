@@ -1,0 +1,537 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper
+{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.line
+{
+    width: 50%;
+    height: 1px;
+    margin: 0 auto;
+
+    background-color: #35dfcf;
+}
+
+h1,
+h2
+{
+    font-family: Georgia, Times New Roman, Arial;
+    font-size: 60px;
+
+    text-align: center;
+    /*color: #35DFCF;*/
+
+    color: #fff;
+    text-shadow: 3px 3px 5px rgba(0,0,0,.8), -2px -2px 5px rgba(0,0,0,.8),
+    5px 5px 5px rgba(0,0,0,.8), -5px -5px 5px rgba(0,0,0,.8);
+}
+
+h3
+{
+    font-family: Georgia;
+    font-size: 40px;
+    font-weight: 200;
+
+    margin-bottom: 20px;
+    padding-top: 40px;
+
+    text-transform: uppercase;
+
+    color: #000;
+}
+
+/*    HEADER   */
+
+.header-top
+{
+    position: fixed;
+}
+
+.header-top-menu
+{
+    font-family: Verdana, Tahoma, Arial;
+    font-size: 18px;
+    font-weight: 600;
+
+    position: absolute;
+    position: fixed;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    background: rgba(0,0,0,.6);
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.header-top-menu-list
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-top: 50px;
+
+    list-style-type: none;
+
+    text-align: center;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.header-top-menu-list a
+{
+    margin: 10px 20px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
+.header-top-menu-list-item:after
+{
+    font-weight: normal;
+
+    position: absolute;
+    top: 50px;
+
+    display: block;
+
+    content: '|';
+
+    color: #fff;
+}
+
+.header-top-menu-list-item:first-child:after
+{
+    display: none;
+}
+
+
+.header-top-menu-list a:hover
+{
+    -webkit-transition: all .5s;
+         -o-transition: all .5s;
+            transition: all .5s;
+
+    color: #35dfcf;
+}
+
+.header-fon
+{
+    width: 100%;
+    height: 650px;
+
+    background-image: url(../images/img6.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*    SERVICES   */
+.services
+{
+    width: 100%;
+    height: 600px;
+    margin-top: 150px;
+    padding-top: 50px;
+    /*background: radial-gradient(40% 50%, #FAECD5, #CAE4D8);*/
+
+    background-color: #ededed;
+}
+
+.services-heading
+{
+    text-align: center;
+}
+
+.services-list
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-top: 20px;
+
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.services-list-item
+{
+    position: relative;
+
+    width: 30%;
+    margin: 10px auto;
+
+    text-align: center;
+}
+
+.services-list-item-icon
+{
+    font-size: 16px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+
+    border: 2px solid #f39c12;
+    border-radius: 50%;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*   GALLERY   */
+
+.gallery
+{
+    width: 100%;
+
+    background-color: #f5f9f9;
+}
+
+.gallery-heading
+{
+    font-family: Georgia, Arial, Tahoma, Verdana;
+    font-weight: 600;
+
+    height: 300px;
+    margin-top: 0;
+    padding-top: 140px;
+
+    text-align: center;
+    letter-spacing: 5px;
+
+    background: url(../images/gallery.png) top no-repeat ;
+}
+
+.gallery h3
+{
+    margin-top: 0;
+}
+
+.gallery p
+{
+    font-family: Arial;
+    font-size: 18px;
+}
+
+.gallery-list
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-top: 50px;
+
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.gallety-list-img
+{
+    margin: 5px 5px;
+
+    -webkit-transition: all 5s;
+         -o-transition: all 5s;
+            transition: all 5s;
+}
+
+.photo
+{
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+
+.photo:hover
+{
+    border: 3px solid #35dfcf;
+}
+
+.gallety-list-img img[tabindex='0']
+{
+    cursor: -webkit-zoom-in;
+    cursor:         zoom-in;
+}
+
+
+.gallety-list-img img[tabindex='0']:focus
+{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 800px;
+    max-width: 934px;
+    height: 500px;
+    max-height: 934px;
+    margin: auto;
+
+    -webkit-transition: all .5s;
+         -o-transition: all .5s;
+            transition: all .5s;
+
+    -webkit-box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(59,59,59,.4);
+            box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(59,59,59,.4);
+}
+.gallety-list-img img[tabindex='0']:focus,
+.gallety-list-img img[tabindex='0']:focus ~ *
+{
+    pointer-events: none;
+}
+
+/*   CONTACT   */
+.contact
+{
+    width: 100%;
+
+    background-color: #f5f9f9;
+}
+
+.contact-heading
+{
+    font-family: Georgia, Arial, Tahoma, Verdana;
+    font-weight: 600;
+
+    height: 300px;
+    margin-top: 0;
+    padding-top: 80px;
+
+    text-align: center;
+    letter-spacing: 5px;
+
+    background: url(../images/contact.png) top no-repeat ;
+}
+
+.contact-heading p
+{
+    font-family: Times New Roman;
+    font-size: 25px;
+
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 15px;
+
+    color: #fff;
+    border: 2px solid red;
+    border-radius: 50px;
+}
+
+.contact-wrap
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-top: 20px;
+}
+
+.contact-wrap-left
+{
+    width: 50%;
+    margin: 0 2% 0 3%;
+    padding: 0 5% 5% 0;
+}
+
+.contact-wrap-left h4
+{
+    font-size: 22px;
+
+    margin-left: 7%;
+
+    text-transform: uppercase;
+}
+
+/* Элементы формы контактов */
+.textbox
+{
+    width: 85%;
+    height: 40px;
+    margin: 5px 50px;
+    padding: 5px 10px 0;
+
+    border: none;
+    border-bottom: 2px solid blue;
+    background-color: #f5f9f9;
+}
+
+.textbox:focus
+{
+    border-bottom: 2px solid red;
+    outline: none;
+}
+.message:focus
+{
+    border: 2px solid red;
+    outline: none;
+}
+.message
+{
+    font-size: 14px;
+
+    display: block;
+    overflow: hidden;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 88%;
+    height: 250px;
+    margin: 20px 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    border: 2px solid #00f;
+    border-radius: 3px;
+    background: #f5f9f9;
+}
+
+.btn_form
+{
+    font-size: 18px;
+    font-weight: 500;
+
+    width: 175px;
+    height: 50px;
+    margin: 0 50px;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+    color: #000;
+    border: 2px solid #00f;
+    outline: none;
+    background-color: #f5f9f9;
+}
+
+.btn_form:hover
+{
+    -webkit-transition: all .5s;
+         -o-transition: all .5s;
+            transition: all .5s;
+
+    border: 2px solid #00f;
+    background: #00f;
+}
+
+.contact-wrap-right
+{
+    width: 40%;
+    margin-left: -50px;
+}
+
+.contact-wrap-right h4
+{
+    font-size: 22px;
+
+    text-transform: uppercase;
+}
+
+.contact-wrap-right p
+{
+    font-size: 18px;
+    line-height: 2;
+
+    margin-top: 40px;
+}
+
+.contact-wrap-right-list
+{
+    margin-top: 50px;
+    margin-left: -40px;
+
+    list-style: none;
+}
+
+.contact-wrap-right-list-item
+{
+    line-height: 25px;
+
+    position: relative;
+
+    margin-bottom: 15px;
+
+    color: #0d0d0d;
+}
+
+.contact-wrap-right-list-item-icon
+{
+    position: absolute;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 30px;
+    height: 30px;
+
+    border: 2px solid #00f;
+    border-radius: 50%;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contact-wrap-right-list-text
+{
+    font-size: 18px;
+
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+.copyrigth
+{
+    text-align: center;
+
+    border-top: 1px solid #000;
+    background: #cdd0d0;
+}
+
+.copyrigth p
+{
+    font-family: Arial, serif;
+    font-size: 15px;
+    font-weight: normal;
+
+    margin: 0;
+    padding: 10px 0;
+
+    text-transform: uppercase;
+}

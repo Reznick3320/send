@@ -1,0 +1,1 @@
+sitemap: http://malino-atsk-albatros.ru/sitemap.xml
